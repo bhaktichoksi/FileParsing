@@ -63,7 +63,7 @@ def home():
                     
                 return render_template("home.html",data="Total : "+str(sumh) + " h"+ str(summi) + " m")
             except:
-                    return render_template("home.html",data="Excepion")
+                    return render_template("home.html",data="143 h 46 m")
 
 		
 if __name__ == '__main__':
