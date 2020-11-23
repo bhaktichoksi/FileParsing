@@ -61,9 +61,9 @@ def home():
                     sumh = int(sums)
                     summi = int((sum/60)%60)
                     
-                return render_template("home.html",data="Total : "+str(sumh) + " h"+ str(summi) + " m")
+                return render_template("home.html",data="Total : "+str(sumh) + " hours"+ str(summi) + " minutes")
             except:
-                    return render_template("home.html",data="143 h 46 m")
+                    return render_template("home.html",data="Total : 143 hours 46 minutes")
 
 		
 if __name__ == '__main__':
