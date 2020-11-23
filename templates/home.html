@@ -10,20 +10,21 @@ table, th, td {   border: 1px solid black;}
 </head>
    <body>
    <div class=" d-flex justify-content-centerd-flex justify-content-center " style="margin-top:20%;">
-      <form action = "https://fileparsing.herokuapp.com/uploader" method = "POST" 
+      <form action = "https://timelogfileparsing.herokuapp.com/uploader" method = "POST" 
          enctype = "multipart/form-data">
 		 <div class="form-group">
+	<h3> Its Bhakti Choksi's TimeLog Server Host...	</h3> 
     <label for="exampleFormControlFile1">Upload log file here</label>
     <input type="file" class="form-control-file" name="file">
   </div>
         <input type = "submit"  class="form-control">
-      </form>
+      
 	  <div class="">
 	  {% if data %}
 	   <div style="   border: 2px solid black;
   border-radius: 8px;" >{{data}}</div>
 	   {% endif %}</div>
 	   </div>
-	   
+	   </form>
    </body>
 </html>
